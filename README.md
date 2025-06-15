@@ -1,9 +1,6 @@
 # Scorecard
 1. Simple Cricket Scorecard
-
-[GitHub Pages Status] (https://github.com/rohith-rathnamala/Scorecard/actions/workflows/pages/pages-build-deployment/badge.svg) This badge shows deployment status, update the link with your actual repo path
-
-A straightforward and interactive web-based cricket scorecard to track runs, wickets, and overs for two teams, with a customizable overs limit and a clear display of game progress and results.
+     A straightforward and interactive web-based cricket scorecard to track runs, wickets, and overs for two teams, with a customizable overs limit and a clear display of game progress and results.
 
 2. Features
 
@@ -18,7 +15,7 @@ A straightforward and interactive web-based cricket scorecard to track runs, wic
 3. Live Demo
 
    Experience the scorecard live here:
-   View Live Demo (https://rohith-rathnamala.github.io/Scorecard/) IMPORTANT: Update this link to your actual GitHub Pages URL!
+   View Live Demo (https://rohith-rathnamala.github.io/Scorecard/)
 
 4. Technologies Used
 
@@ -32,7 +29,6 @@ A straightforward and interactive web-based cricket scorecard to track runs, wic
 
    5.1. Clone the Repository:
       git clone https://github.com/rohith-rathnamala/Scorecard.git
-      IMPORTANT: Update this link to your actual repository clone URL!
    5.2. Navigate to the Project Directory:
       cd Scorecard
    5.3. Open index.html:
