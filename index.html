@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Team Cricket Scorecard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Two-Team Cricket Scorecard</h1>
+
+        <div id="teamInputSection" class="input-section">
+            <label for="team1NameInput">Enter Team 1 Name:</label>
+            <input type="text" id="team1NameInput" placeholder="e.g., India" class="text-input">
+            <label for="team2NameInput">Enter Team 2 Name:</label>
+            <input type="text" id="team2NameInput" placeholder="e.g., Australia" class="text-input">
+            <label for="oversLimitInput">Set Overs Limit:</label>
+            <input type="number" id="oversLimitInput" value="2" min="1" max="50" class="text-input small-input-overs">
+            <button id="startGameButton" class="btn primary-btn">Start Match</button>
+        </div>
+
+        <div id="gameplaySection" style="display: none;">
+            <h2 id="currentBattingTeamDisplay"></h2>
+
+            <div class="team-score-panel" id="team1ScorePanel">
+                <h3><span id="displayTeam1Name"></span> Score</h3>
+                <div class="score-details">
+                    <p class="score-line">Score: <span id="displayTeam1Runs">0</span>/<span id="displayTeam1Wickets">0</span></p>
+                    <p class="overs-line">Overs: <span id="displayTeam1Overs">0.0</span></p>
+                </div>
+                <p class="team-target" id="team1Target" style="display:none;"></p>
+            </div>
+
+            <div class="team-score-panel" id="team2ScorePanel">
+                <h3><span id="displayTeam2Name"></span> Score</h3>
+                <div class="score-details">
+                    <p class="score-line">Score: <span id="displayTeam2Runs">0</span>/<span id="displayTeam2Wickets">0</span></p>
+                    <p class="overs-line">Overs: <span id="displayTeam2Overs">0.0</span></p>
+                </div>
+                <p class="team-target" id="team2Target" style="display:none;"></p>
+            </div>
+
+            <div class="action-section" id="actionButtons">
+                <button class="btn success-btn run-btn" data-runs="1">1</button>
+                <button class="btn success-btn run-btn" data-runs="2">2</button>
+                <button class="btn success-btn run-btn" data-runs="3">3</button>
+                <button class="btn success-btn run-btn" data-runs="4">4</button>
+                <button class="btn success-btn run-btn" data-runs="5">5</button>
+                <button class="btn success-btn run-btn" data-runs="6">6</button>
+
+                <button id="addWicketButton" class="btn danger-btn">W (Wicket)</button>
+                <button id="addDotBallButton" class="btn info-btn">0 (Dot)</button>
+                <button id="addNoBallButton" class="btn warning-btn">NB (No Ball)</button>
+                <button id="addWideButton" class="btn warning-btn">WD (Wide)</button>
+            </div>
+
+            <p id="statusMessage" class="status-message"></p>
+
+            <div class="game-control-buttons">
+                <button id="endInningsButton" class="btn primary-btn" style="display:none;">End Innings</button>
+                <button id="resetGameButton" class="btn danger-btn" style="display:none;">Reset Game</button>
+            </div>
+            <p id="finalResult" class="status-message final-result"></p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
